@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple Calculator</title>
+	<!-- custom css  -->
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+	<div class="myBody">
+		<h2>Calculator</h2>
+		<table>
+			<tr>
+				<td colspan="4"><input type="text" id="myResult"></td>
+			</tr>
+
+			<tr>
+				<td class="commonStyle"><input style="color: #D8682C;" type="button" value="C" onclick="deleteMe('C')">
+				</td>
+				<td class="commonStyle "><input class="colorCommon" type="button" value="(" onclick="calculator('(')">
+				</td>
+				<td class="commonStyle "><input class="colorCommon" type="button" value=")" onclick="calculator(')')">
+				</td>
+				<td class="commonStyle "><input class="colorCommon" type="button" value="%" onclick="calculator('%')">
+				</td>
+			</tr>
+
+			<tr>
+				<td class="commonStyle"><input type="button" value="1" onclick="calculator('1')"></td>
+				<td class="commonStyle"><input type="button" value="2" onclick="calculator('2')"></td>
+				<td class="commonStyle"><input type="button" value="3" onclick="calculator('3')"></td>
+				<td class="commonStyle "><input class="colorCommon" type="button" value="*" onclick="calculator('*')">
+				</td>
+			</tr>
+
+			<tr>
+				<td class="commonStyle"><input type="button" value="4" onclick="calculator('4')"></td>
+				<td class="commonStyle"><input type="button" value="5" onclick="calculator('5')"></td>
+				<td class="commonStyle"><input type="button" value="6" onclick="calculator('6')"></td>
+				<td class="commonStyle "><input class="colorCommon" type="button" value="+" onclick="calculator('+')">
+				</td>
+			</tr>
+
+			<tr>
+				<td class="commonStyle"><input type="button" value="7" onclick="calculator('7')"></td>
+				<td class="commonStyle"><input type="button" value="8" onclick="calculator('8')"></td>
+				<td class="commonStyle"><input type="button" value="9" onclick="calculator('9')"></td>
+				<td class="commonStyle "><input class="colorCommon" type="button" value="-" onclick="calculator('-')">
+				</td>
+			</tr>
+
+			<tr>
+				<td class="commonStyle"><input type="button" value="." onclick="calculator('.')"></td>
+				<td class="commonStyle"><input type="button" value="0" onclick="calculator('0')"></td>
+				<td class="commonStyle"><input style="font-size: 18.4px;" type="button" value="000"
+						onclick="calculator('000')"></td>
+				<td style="background-color: #2AA0FA;color: #fff;" class="commonStyle"><input type="button" value="="
+						onclick="answer('=')"></td>
+			</tr>
+
+		</table>
+	</div>
+
+
+
+	<!-- js part start  -->
+	<script src="index.js"></script>
+
+</body>
+
+</html>
